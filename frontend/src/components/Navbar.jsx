@@ -1,5 +1,6 @@
 import React from "react";
 import { IoMdSearch } from "react-icons/io";
+import DarkMode from "./DarkMode";
 
 const MenuLinks = [
   {
@@ -64,7 +65,9 @@ const Navbar = () => {
               <IoMdSearch className="text-xl text-gray-600 group-hover:text-primary dark:text-gray-400 absolute top-1/2 -translate-y-1/2 right-3 duration-200" />
             </div>
             {/* Dark Mode section */}
-            <div></div>
+            <div>
+              <DarkMode />
+            </div>
           </div>
         </div>
       </div>
