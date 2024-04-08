@@ -2,6 +2,7 @@ import React from "react";
 import { IoMdSearch } from "react-icons/io";
 import DarkMode from "./DarkMode";
 import { FaCaretDown } from "react-icons/fa";
+import { FaCartShopping } from "react-icons/fa6";
 const MenuLinks = [
   {
     id: 1,
@@ -106,6 +107,12 @@ const Navbar = () => {
               />
               <IoMdSearch className="text-xl text-gray-600 group-hover:text-primary dark:text-gray-400 absolute top-1/2 -translate-y-1/2 right-3 duration-200" />
             </div>
+            <button className="relative p-3">
+              <FaCartShopping className="text-xl text-gray-600 dark:text-gray-400" />
+              <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex justify-center items-center text-xs">
+                4
+              </div>
+            </button>
             {/* Dark Mode section */}
             <div>
               <DarkMode />
